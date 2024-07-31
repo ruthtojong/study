@@ -1,0 +1,14 @@
+yaml_dict["interface"]["name"] = "GigabitEthernet1"
+
+print(yaml.dump(yaml_dict, default_flow_style=False))
+interface:
+  name: GigabitEthernet2
+  description: Wide Area Network
+  enabled: true
+  ipv4:
+    address:
+    - ip: 172.16.0.2
+      netmask: 255.255.255.0
+  name: GigabitEthernet1
+
+  

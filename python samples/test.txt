@@ -1,0 +1,11 @@
+This is much simpler code
+and you can use all of the same 
+methods to interact with the files
+as before. To write to a file, 
+you can use the same structure,
+but in this case, because you
+want to append some data to the file, 
+you need to change how you open the file to allow for
+writing. In this example, you can use "a+" 
+to allow reading and appending to the end of the
+file. Here is what the code would look like:
