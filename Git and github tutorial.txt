@@ -1,0 +1,54 @@
+HOW to create git and add to GitHub
+
+1. create local folder "existing-project"
+2. open folder in VS code
+   - create files if none
+3. go to local folder and right click to "open a terminal"
+4. Initialize to create git -> git init
+5. Check status -> git status
+6. Add files -> git add . 
+7. Commit changes -> git commit -m "Initial commit"
+7a. *use git commit -m "" --amend if you have want to edit message
+8. Staging Area & Working Area 
+* use git reset .  and git checkout .
+13. Restoring Code to a Previous Version without creating a branch
+* git checkout <commit hash> <filename>
+14. .gitignore
+15. remove git
+* rm -rf .git
+
+
+Push and Pull
+1. Create an Online Backup
+   On Github, create a new repository
+   On terminal, type below
+  *git remote add <what-you-name-your-file> <http url>
+   -> git remote add origin https://github.com/ruthtojong/existing-project.git
+2. Sync Computer to github
+   Push to GitHub -> git push origin main 
+   Create shortcut for push -> git push origin main --set-upstream
+Overwrite a commit
+   *git commit --amend -m "version 12"
+   *git push 
+   *git push -f
+3. Sync changes from GitHub to local repository
+   *get fetch
+   *git pull
+   *git pull origin main --set-upstream
+
+
+*TO DELETE
+git branch -D branch branchname
+
+
+Tutorial
+part 1
+https://www.youtube.com/watch?v=hrTQipWp6co&t=71s
+part 2
+https://www.youtube.com/watch?v=1ibmWyt8hfw
+part 3
+https://www.youtube.com/watch?v=Q1kHG842HoI
+
+1. use amend, git checkout -- (to reset changes)
+2. switch to versions, view previous of code
+   -> git checkout commit hash
